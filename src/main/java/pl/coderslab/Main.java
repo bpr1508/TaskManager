@@ -1,9 +1,11 @@
 package pl.coderslab;
 
 import org.apache.commons.lang3.ArrayUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.PrintWriter;
 import java.util.Scanner;
 
 import static pl.coderslab.ConsoleColors.*;
@@ -24,6 +26,8 @@ public class Main {
                 default -> writeToFile();
             }
         }
+
+
     }
 
     private static void meeting() {
@@ -61,7 +65,16 @@ public class Main {
     }
 
     private static void writeToFile() {
-
+        try (PrintWriter printWriter = new PrintWriter("tasks.csv")) {
+            for (String[] task : tasks) {
+                String line = StringUtils.join(task, ", ");
+                printWriter.println(line);
+            }
+        } catch (FileNotFoundException ex) {
+            System.out.println("Błąd zapisu do pliku.");
+        }
+        System.out.println("Data has written to file tasks.csv");
+        System.out.println(RED + "Bye, bye." + RESET);
     }
 
     private static void removeTask() {
