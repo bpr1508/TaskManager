@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78d7427b-60c0-4875-8071-0ebe96a38c87" name="Changes" comment="Odczyt danych z pliku i zapisanie do tablicy&#10;Wybranie opcji">
+    <list default="true" id="78d7427b-60c0-4875-8071-0ebe96a38c87" name="Changes" comment="Dodawanie zadania&#10;Usunięcie zadania&#10;Poprawki w kodzie">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/coderslab/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/Main.java" afterDir="false" />
     </list>
@@ -89,7 +89,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674821543306</updated>
-      <workItem from="1674821545238" duration="12397000" />
+      <workItem from="1674821545238" duration="13428000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1674822904558</created>
@@ -112,7 +112,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674832430644</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Dodawanie zadania&#10;Usunięcie zadania&#10;Poprawki w kodzie">
+      <created>1674835751227</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1674835751231</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -121,6 +128,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Odczyt danych z pliku i zapisanie do tablicy&#10;Wybranie opcji" />
-    <option name="LAST_COMMIT_MESSAGE" value="Odczyt danych z pliku i zapisanie do tablicy&#10;Wybranie opcji" />
+    <MESSAGE value="Dodawanie zadania&#10;Usunięcie zadania&#10;Poprawki w kodzie" />
+    <option name="LAST_COMMIT_MESSAGE" value="Dodawanie zadania&#10;Usunięcie zadania&#10;Poprawki w kodzie" />
   </component>
 </project>

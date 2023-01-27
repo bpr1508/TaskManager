@@ -53,10 +53,15 @@ public class Main {
     }
 
     private static void listTasks() {
-
+        int n = tasks.length;
+        for (int i = 0; i < tasks.length; i++) {
+            String[] task = tasks[i];
+            System.out.println(task[0] + " " + task[1] + " " + task[2]);
+        }
     }
 
     private static void writeToFile() {
+
     }
 
     private static void removeTask() {
@@ -95,9 +100,9 @@ public class Main {
         String description = scanner.nextLine();
         System.out.println("Please add task due date: ");
         String dueDate = scanner.nextLine();
-        String important ="";
+        String important = "";
         System.out.println("Please add task is important - true/false: ");
-        while(!"true".equals(important) && !"false".equals(important)){
+        while (!"true".equals(important) && !"false".equals(important)) {
             important = scanner.nextLine();
             System.out.println("Please add task is important - true/false: ");
         }
