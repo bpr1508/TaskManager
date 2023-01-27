@@ -9,24 +9,19 @@ import java.util.Scanner;
 import static pl.coderslab.ConsoleColors.*;
 
 public class Main {
-    static final String[] OPTIONS = {"add", "remove", "list", "exit"};
     static String[][] tasks = new String[0][];
 
     public static void main(String[] args) throws FileNotFoundException {
         fileToArray();
-        int i = 0;
         String option = "";
         while (!"exit".equals(option)) {
             meeting();
             option = chooseOption();
-            if ("add".equals(option)) {
-                addTask();
-            } else if ("remove".equals(option)) {
-                removeTask();
-            } else if ("list".equals(option)) {
-                listTasks();
-            } else {
-                writeToFile();
+            switch (option) {
+                case "add" -> addTask();
+                case "remove" -> removeTask();
+                case "list" -> listTasks();
+                default -> writeToFile();
             }
         }
     }
@@ -47,7 +42,7 @@ public class Main {
         }
         Scanner scan = new Scanner(file);
         while (scan.hasNextLine()) {
-            reading.append(scan.nextLine() + ";");
+            reading.append(scan.nextLine()).append(";");
         }
         String[] lines = reading.toString().split(";");
         for (String line : lines) {
@@ -65,10 +60,48 @@ public class Main {
     }
 
     private static void removeTask() {
-
+        if (tasks.length == 0) {
+            System.out.println(RED + "No tasks to remove." + RESET);
+            return;
+        }
+        System.out.print(BLUE + "Please select index to remove: " + RESET);
+        Scanner scanner = new Scanner(System.in);
+        int index;
+        while (true) {
+            while (!scanner.hasNextInt()) {
+                scanner.nextLine();
+                System.out.print(RED + "Invalid argument passed. Please give number between 0 and " + (tasks.length - 1) + ": " + RESET);
+            }
+            index = scanner.nextInt();
+            if (index >= 0 && index < tasks.length) {
+                break;
+            } else {
+                System.out.print(RED + "Invalid argument passed. Please give number between 0 and " + (tasks.length - 1) + ": " + RESET);
+            }
+        }
+        String[] task = tasks[index];
+        System.out.print(BLUE + "Please confirm (Y/y) to remove task '" + task[0] + "' > " + RESET);
+        scanner = new Scanner(System.in);
+        String confirmed = scanner.nextLine();
+        if ("y".equalsIgnoreCase(confirmed)) {
+            tasks = ArrayUtils.remove(tasks, index);
+            System.out.println("Task was successfully deleted");
+        }
     }
 
     private static void addTask() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Please add task description: ");
+        String description = scanner.nextLine();
+        System.out.println("Please add task due date: ");
+        String dueDate = scanner.nextLine();
+        String important ="";
+        System.out.println("Please add task is important - true/false: ");
+        while(!"true".equals(important) && !"false".equals(important)){
+            important = scanner.nextLine();
+            System.out.println("Please add task is important - true/false: ");
+        }
+        tasks = ArrayUtils.add(tasks, new String[]{description, dueDate, important});
     }
 
     private static String chooseOption() {

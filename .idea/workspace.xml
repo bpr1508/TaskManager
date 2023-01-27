@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78d7427b-60c0-4875-8071-0ebe96a38c87" name="Changes" comment="Initial commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tasks.csv" afterDir="false" />
+    <list default="true" id="78d7427b-60c0-4875-8071-0ebe96a38c87" name="Changes" comment="Odczyt danych z pliku i zapisanie do tablicy&#10;Wybranie opcji">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/coderslab/Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/coderslab/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +23,19 @@
   <component name="Git.Settings">
     <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="258b6c92-55a3-457c-a037-9ae44c9d0296" />
+        <option name="url" value="https://github.com/bpr1508/TaskManager.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -78,7 +89,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674821543306</updated>
-      <workItem from="1674821545238" duration="9302000" />
+      <workItem from="1674821545238" duration="12397000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1674822904558</created>
@@ -94,7 +105,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674823447698</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Odczyt danych z pliku i zapisanie do tablicy&#10;Wybranie opcji">
+      <created>1674832430644</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1674832430644</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -102,6 +120,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+    <MESSAGE value="Odczyt danych z pliku i zapisanie do tablicy&#10;Wybranie opcji" />
+    <option name="LAST_COMMIT_MESSAGE" value="Odczyt danych z pliku i zapisanie do tablicy&#10;Wybranie opcji" />
   </component>
 </project>
